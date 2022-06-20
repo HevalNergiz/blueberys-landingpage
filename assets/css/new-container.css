@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+  .new-container {
+    margin: auto;
+    max-width: 1200px;
+    padding: 40px 30px 30px 90px;
+  }
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  outline: none;
+  padding: 0;
+}
+
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+*::before {
+  margin: 0;
+  padding: 0;
+}
+

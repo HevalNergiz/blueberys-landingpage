@@ -1,0 +1,128 @@
+:root {
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    padding: 0.5rem 0.5rem;
+    filter: url('#goo');
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    padding: 1rem 0rem;
+    filter: url('#goo');
+    margin: 0px 5px;
+  }
+}
+
+.button2 {
+  display: inline-block;
+  text-align: center;
+  background-color: #ffffff;
+  padding: 0.9em 1em 0.9em;
+  line-height: 1;
+  border-radius: 1em;
+  position: relative;
+  min-width: 7em;
+  text-decoration: none;
+  font-family: 'Gilroy-Medium ☞';
+  font-size: 1.1rem;
+  color: var(--bs-blue)!important;
+}
+
+.button {
+  display: inline-block;
+  text-align: center;
+  background: var(--bs-blue);
+  color: #fff!important;
+  font-weight: bold;
+  padding: 0.9em 1em 0.9em;
+  line-height: 1;
+  border-radius: 1em;
+  position: relative;
+  min-width: 7em;
+  text-decoration: none;
+  font-family: 'Gilroy-Medium ☞';
+  font-size: 1.1rem;
+}
+
+.button2:before, .button2:after {
+  width: 2.4em;
+  height: 2.95em;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background: rgb(255,255,255);
+  border-radius: 50%;
+  transition: transform 1s ease;
+  transform: scale(0);
+  z-index: -1;
+}
+
+.button:before, .button:after {
+  width: 2.4em;
+  height: 2.95em;
+  position: absolute;
+  content: "";
+  display: inline-block;
+  background: var(--bs-blue);
+  border-radius: 50%;
+  transition: transform 1s ease;
+  transform: scale(0);
+  z-index: -1;
+}
+
+.button2:before {
+  top: -25%;
+  left: 20%;
+}
+
+.button:before {
+  top: -25%;
+  left: 20%;
+}
+
+.button2:after {
+  bottom: -25%;
+  right: 20%;
+}
+
+.button:after {
+  bottom: -25%;
+  right: 20%;
+}
+
+.button2:hover:before, .button2:hover:after {
+  transform: none;
+}
+
+.button:hover:before, .button:hover:after {
+  transform: none;
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .fulle {
+    /*min-height: 100vh;*/
+  }
+}
+
+@media (min-width: 768px) {
+  .card svg {
+    font-size: 50px;
+    color: var(--bs-blue);
+  }
+}
+
+@media (max-width: 768px) {
+  .card svg {
+    font-size: 25px;
+    color: var(--bs-blue);
+    margin-right: 20px;
+  }
+}
+
